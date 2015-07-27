@@ -1,27 +1,3 @@
-/*
- * Copyright (C) 2013 Henrik Ekblad <henrik.ekblad@gmail.com>
- * 
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- * 
- * DESCRIPTION
- * The ArduinoGateway prints data received from sensors on the serial link. 
- * The gateway accepts input on seral which will be sent out on radio network.
- *
- * The GW code is designed for Arduino Nano 328p / 16MHz
- *
- * Wire connections (OPTIONAL):
- * - Inclusion button should be connected between digital pin 3 and GND
- * - RX/TX/ERR leds need to be connected between +5V (anode) and digital ping 6/5/4 with resistor 270-330R in a series
- *
- * LEDs (OPTIONAL):
- * - RX (green) - blink fast on radio message recieved. In inclusion mode will blink fast only on presentation recieved
- * - TX (yellow) - blink fast on radio message transmitted. In inclusion mode will blink slowly
- * - ERR (red) - fast blink on error during transmission error or recieve crc error  
- */
- 
- // 20df8877
 
 #include <SPI.h>  
 #include <MySensor.h>  
