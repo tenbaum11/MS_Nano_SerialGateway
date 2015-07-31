@@ -3,7 +3,8 @@
 #include <MySensor.h>  
 #include <MyGateway.h>  
 #include <stdarg.h>
-
+// 220;255;3;0;1;1438233491
+//220;255;3;0;1;1496700
 #define INCLUSION_MODE_TIME 0 // Number of minutes inclusion mode is enabled
 #define INCLUSION_MODE_PIN 88 // Digital pin used for inclusion mode button
 #define RADIO_ERROR_LED_PIN 56  // Error led pin
@@ -164,6 +165,7 @@ void serialEvent() {
     }
   }
 }
+
 
 
 
